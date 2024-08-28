@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EducationLoanRequest</string>
+    <string-array name="education_level_array">
+        <item>High School</item>
+        <item>Undergraduate</item>
+        <item>Postgraduate</item>
+        <item>Doctorate</item>
+    </string-array>
+</resources>
