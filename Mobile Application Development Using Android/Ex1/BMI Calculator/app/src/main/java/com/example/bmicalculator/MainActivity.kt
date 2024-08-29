@@ -9,6 +9,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -39,6 +40,8 @@ class MainActivity : AppCompatActivity() {
 
                 val bmiResult = String.format("Your BMI is: %.2f\nStatus: %s", bmi, status)
                 t4.text = bmiResult
+                var toast = Toast.makeText(this,bmiResult,Toast.LENGTH_LONG)
+                toast.show()
             }
             else{
                 t4.text = "Please enter valid height and weight"

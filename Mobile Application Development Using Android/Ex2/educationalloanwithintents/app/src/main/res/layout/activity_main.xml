@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name" />
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone" />
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email" />
+    <CheckBox
+        android:id="@+id/checkBoxAgree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I agree to the terms" />
+    <RadioGroup
+        android:id="@+id/radioGroupPurpose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radioButtonHospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hospital Outpatient Visit" />
+        <RadioButton
+            android:id="@+id/radioButtonEducation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Education Loan Request" />
+        <RadioButton
+            android:id="@+id/radioButtonConference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conference Participation Request" />
+        <RadioButton
+            android:id="@+id/radioButtonJob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Job Request" />
+    </RadioGroup>
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/education_level_array" />
+    <Switch
+        android:id="@+id/switchPreference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preference" />
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit" />
+    <ImageView
+        android:id="@+id/imageViewPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_call" />
+</LinearLayout>
